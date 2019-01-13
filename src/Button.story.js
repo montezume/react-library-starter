@@ -1,9 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs';
-import { Button } from '../dist/react-library-starter.esm';
-
-console.log('here');
+import Button from './Button';
 
 storiesOf('Components|Buttons', module)
   .addDecorator(withKnobs)
