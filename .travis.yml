@@ -15,4 +15,5 @@ script:
   - set -e
   - yarn run lint --reporters jest-silent-reporter
   - yarn run test --reporters jest-silent-reporter
+  - yarn build
   - set +e

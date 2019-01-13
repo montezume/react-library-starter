@@ -1,3 +1,3 @@
-# Opionated Starter for creating React libraries
+# Opinionated Starter for creating React libraries
 
 more docs to come
