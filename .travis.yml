@@ -1,0 +1,18 @@
+sudo: false
+language: node_js
+node_js:
+  - '10'
+
+notifications:
+  email: false
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+script:
+  - set -e
+  - yarn run lint --reporters jest-silent-reporter
+  - yarn run test --reporters jest-silent-reporter
+  - set +e
