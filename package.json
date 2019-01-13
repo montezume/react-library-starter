@@ -10,7 +10,7 @@
   "module": "dist/react-library-starter.esm.js",
   "scripts": {
     "prebuild": "rimraf dist/**",
-    "build": "yarn build:es && yarn build:cjs",
+    "build": "yarn build:es && yarn build:cjs && yarn build:umd",
     "build:umd": "cross-env NODE_ENV=production BUILD_FORMAT=esm rollup -c -f umd -n react-library-starter -o ./dist/react-library-starter.umd.js",
     "build:cjs": "cross-env NODE_ENV=production BUILD_FORMAT=cjs rollup -c -f cjs -o ./dist/react-library-starter.cjs.js",
     "build:es": "cross-env NODE_ENV=production BUILD_FORMAT=esm rollup -c -f esm -o ./dist/react-library-starter.esm.js",
